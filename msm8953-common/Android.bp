@@ -146,6 +146,17 @@ android_app_import {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "WfdService",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
